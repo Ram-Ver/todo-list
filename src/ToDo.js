@@ -35,8 +35,6 @@ function ToDo() {
   return (
     <div className="common">
       <div className="todo-header">TODO LIST</div>
-      <div className="todo-header">TODO LIST</div>
-      <div className="todo-header">TODO LIST</div>
 
       <div className="todo-input-feild">
         <input
