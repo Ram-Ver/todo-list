@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import ToDoList from "./ToDoList";
+import React, { useState } from 'react';
+import ToDoList from './ToDoList';
 
 function ToDo() {
-  const [list, setList] = useState("");
+  const [list, setList] = useState('');
   const [data, setData] = useState([]);
 
   const inputHandler = (event) => {
@@ -10,14 +10,14 @@ function ToDo() {
   };
 
   const submitHandler = () => {
-    if (list !== "") {
+    if (list !== '') {
       setData((prev) => {
         return [...prev, list];
       });
     } else {
       return null;
     }
-    setList("");
+    setList('');
   };
 
   const deleteList = (id) => {
@@ -34,6 +34,7 @@ function ToDo() {
   });
   return (
     <div className="common">
+      <div className="todo-header">TODO LIST</div>
       <div className="todo-header">TODO LIST</div>
       <div className="todo-input-feild">
         <input
